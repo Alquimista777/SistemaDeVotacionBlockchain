@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Primera DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>DApp Votacion</h1>
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Candidato</th>
+          <th>Votos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Satoshi</td>
+          <td id="1"></td>
+        </tr>
+        <tr>
+          <td>Vitalik</td>
+          <td id="22"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msg"></div>
+  </div>
+  <select id="candidato">
+    <option value="1">Satoshi</option>
+    <option value="2">Vitalik</option>
+    <option value="3">Satoshi</option>
+    
+  </select>
+  <a href="#" onclick="votar()" class="btn btn-primary">Votar</a>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="index.js"></script>
+</html>
